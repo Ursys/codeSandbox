@@ -1,6 +1,6 @@
 {
-"name": "Hello World!",
-"description": "My first Chrome App.",
+"name": "Even or Odd",
+"description": "Determines if the number entered is even or odd.",
 "version": "0.1",
 "app": {
   "background": {
