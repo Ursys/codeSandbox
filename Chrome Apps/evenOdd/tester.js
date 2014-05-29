@@ -1,6 +1,6 @@
 var userInput;
 
-document.getElementById("test").addEventListener("click", test());
+document.getElementById("test").addEventListener("click", testFunction());
 
 function test(){
   var userInput = document.getElementById("userInput").value;
