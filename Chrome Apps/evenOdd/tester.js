@@ -1,8 +1,9 @@
 var userInput;
 
-getElementById("test").onclick = testFunction();
+document.getElementById("test").addEventListener("click", test());
 
-function test(userInput){
+function test(){
+  var userInput = document.getElementById("userInput").value;
   if(userInput % 2 === 0) {
     document.getElementById("result").innerHTML = "The number is even";
   } else {
@@ -12,6 +13,5 @@ function test(userInput){
 
 function testFunction() {
   userInput = document.getElementById("userInput").value;
-  document.getEmementById("result").innerHTML = "6";
+  document.getElementById("result").innerHTML = userInput;
 }
-
