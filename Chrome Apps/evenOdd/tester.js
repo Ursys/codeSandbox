@@ -1,17 +1,21 @@
-var userInput;
+numberTest();
 
-document.getElementById("test").addEventListener("click", testFunction());
-
-function test(){
-  var userInput = document.getElementById("userInput").value;
-  if(userInput % 2 === 0) {
-    document.getElementById("result").innerHTML = "The number is even";
-  } else {
-    document.getElementById("result").innerHTML = "The number is odd";
-  }
+function numberTest () {
+  var testButton = document.getElementById("test");
+  testButton.onclick = function() {
+    evenOdd();
+  };
 }
 
-function testFunction() {
-  userInput = document.getElementById("userInput").value;
-  document.getElementById("result").innerHTML = userInput;
+function evenOdd() {
+  var input = document.getElementById("userInput").value;
+  if (isNaN(input)) {
+    document.getElementById("result").innerHTML = input + " is not a number. Please Enter A Number";
+  } else {
+    if (input % 2 === 0) {
+      document.getElementById("result").innerHTML = input + " is an EVEN number";
+    } else {
+      document.getElementById("result").innerHTML = input + " is an ODD number";
+    }
+  }
 }
