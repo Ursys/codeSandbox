@@ -7,5 +7,5 @@
     "scripts": ["background.js"]
   }
 },
-"icons": { "16": "mtn-16.png", "128": "mtn-128.png"}
+"icons": { "16": "tzz-16.png", "128": "tzz-128.png"}
 }
